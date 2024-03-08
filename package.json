@@ -1,0 +1,30 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hookform/resolvers": "^3.3.4",
+    "axios": "^1.6.7",
+    "joi": "^17.12.2",
+    "joi-objectid": "^4.0.2",
+    "mongoose": "^8.2.1",
+    "next": "^14.1.2",
+    "next-connect": "^1.0.0",
+    "next-joi": "^2.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-dom": "^1.0.2",
+    "react-hook-form": "^7.51.0",
+    "react-router-dom": "^6.22.3",
+    "styled-components": "^6.1.8",
+    "swc": "^1.0.11",
+    "swr": "^2.2.5"
+  }
+}
