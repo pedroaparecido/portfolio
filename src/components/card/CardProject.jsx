@@ -4,9 +4,9 @@ import styled from "styled-components"
 import CardVisit from "./CardVisit"
 
 const DivCard = styled.div`
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding-left: 200px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
     padding-bottom: 100px;
 `
 

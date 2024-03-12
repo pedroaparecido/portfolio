@@ -4,6 +4,7 @@ const DivFooter = styled.div`
     display: flex;
     flex-direction: column;
     padding-left: 100vh;
+    padding-right: 50px;
 `
 
 const Name = styled.h1`

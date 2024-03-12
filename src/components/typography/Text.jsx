@@ -5,6 +5,7 @@ const TextDiv = styled.div`
     font-size: 50px;
     color: #b9a6f2;
     font-weight: bold;
+    text-align: center;
     padding-bottom: 30px;
 `
 

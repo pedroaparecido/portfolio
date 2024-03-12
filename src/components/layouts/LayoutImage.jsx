@@ -8,6 +8,7 @@ const PrimaryDiv = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+    min-width: max-content;
     height: 87vh;
     display: flex;
     flex-direction: column;

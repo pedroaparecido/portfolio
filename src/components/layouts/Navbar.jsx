@@ -6,6 +6,7 @@ import Name from "../typography/Name"
 
 const PrimaryDiv = styled.div`
     z-index: 2;
+    box-sizing: border-box;
     position: fixed;
     opacity: solid;
     width: 100%;

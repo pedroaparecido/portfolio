@@ -11,6 +11,20 @@ import FooterName from "../src/components/typography/FooterName"
 import FooterSocial from "../src/components/typography/FooterSocial"
 import Copy from "../src/components/typography/Copy"
 
+const PrincipalDiv = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    @media (max-width: 770px) {
+        min-width: max-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+`
+
 const StyledDiv = styled.div`
     display: flex;
     flex-direction: column;
@@ -26,6 +40,12 @@ const AboutDiv = styled.div`
     justify-content: center;
     gap: 90px;
     padding-bottom: 20vh;
+
+    @media (max-width: 770px) {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 `
 
 const SkillDiv = styled.div`
@@ -45,6 +65,11 @@ const DivRowSkill = styled.div`
     grid-template-columns: repeat(6, 1fr);
     gap: 10px;
     padding-right: 20px;
+
+    @media (max-width: 770px) {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
 `
 
 const DivProject = styled.div`
@@ -63,11 +88,24 @@ const DivCard = styled.div`
 const FooterDiv = styled.div`
     width: 100%;
     height: 50vh;
+    min-width: max-content;
     background-color: black;
     display: flex;
     flex-direction: row;
     align-items: center;
     
+    @media (max-width: 1024px) {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+
+    @media (max-width: 770px) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
 `
 
 const FooterCopy = styled.div`
@@ -86,7 +124,7 @@ const A = styled.a`
 
 function HomePage() {
     return(
-        <>
+        <PrincipalDiv>
             <Navbar />
             <a name="home"></a>
             <LayoutImage />
@@ -132,7 +170,7 @@ function HomePage() {
             <FooterCopy>
                 <Copy />
             </FooterCopy>
-        </>
+        </PrincipalDiv>
     )
 }
 
