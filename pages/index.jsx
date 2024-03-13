@@ -16,13 +16,6 @@ const PrincipalDiv = styled.div`
     flex-direction: column;
     align-items: center;
     width: 100%;
-
-    @media (max-width: 770px) {
-        min-width: max-content;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 `
 
 const StyledDiv = styled.div`
@@ -41,7 +34,7 @@ const AboutDiv = styled.div`
     gap: 90px;
     padding-bottom: 20vh;
 
-    @media (max-width: 770px) {
+    @media (max-width: 768px) {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
@@ -66,7 +59,7 @@ const DivRowSkill = styled.div`
     gap: 10px;
     padding-right: 20px;
 
-    @media (max-width: 770px) {
+    @media (max-width: 768x) {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
     }
@@ -83,29 +76,23 @@ const DivCard = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
+    gap: 300px;
+
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
 `
 
 const FooterDiv = styled.div`
     width: 100%;
     height: 50vh;
-    min-width: max-content;
     background-color: black;
     display: flex;
     flex-direction: row;
     align-items: center;
-    
-    @media (max-width: 1024px) {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        justify-content: center;
-    }
-
-    @media (max-width: 770px) {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
 `
 
 const FooterCopy = styled.div`
@@ -124,7 +111,7 @@ const A = styled.a`
 
 function HomePage() {
     return(
-        <PrincipalDiv>
+        <>
             <Navbar />
             <a name="home"></a>
             <LayoutImage />
@@ -170,7 +157,7 @@ function HomePage() {
             <FooterCopy>
                 <Copy />
             </FooterCopy>
-        </PrincipalDiv>
+        </>
     )
 }
 

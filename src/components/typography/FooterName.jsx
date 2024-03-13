@@ -3,7 +3,8 @@ import styled from "styled-components"
 const DivFooter = styled.div`
     display: flex;
     flex-direction: column;
-    padding-left: 60px;
+    align-items: center;
+    padding-left: 30px;
 `
 
 const Name = styled.h1`
