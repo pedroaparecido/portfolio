@@ -17,6 +17,14 @@ const PrimaryDiv = styled.div`
     justify-content: end;
     align-items: center;
     gap: 50px;
+
+    @media (max-width: 426px) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: end;
+        gap: 0;
+    }
 `
 
 const SecondDiv = styled.div`
@@ -25,6 +33,11 @@ const SecondDiv = styled.div`
     align-items: center;
     gap: 30px;
     margin-left: 30px;
+
+    @media (max-width: 426px) {
+        gap: 5px;
+        margin-left: 0;
+    }
 `
 
 function Navbar() {

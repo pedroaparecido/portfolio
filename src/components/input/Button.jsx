@@ -7,6 +7,15 @@ const DivButton = styled.div`
     align-items: center;
     gap: 50px;
     padding-right: 40px;
+
+    @media (max-width: 426px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+        gap: 8px;
+        padding-right: 0;
+    }
 `
 
 const ButtonStyle = styled.a`
@@ -17,6 +26,9 @@ const ButtonStyle = styled.a`
 
     cursor: pointer;
 
+    @media (max-width: 426px) {
+        font-size: 12px;
+    }
 `
 
 function Button() {

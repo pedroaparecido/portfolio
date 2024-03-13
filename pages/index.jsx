@@ -11,13 +11,6 @@ import FooterName from "../src/components/typography/FooterName"
 import FooterSocial from "../src/components/typography/FooterSocial"
 import Copy from "../src/components/typography/Copy"
 
-const PrincipalDiv = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-`
-
 const StyledDiv = styled.div`
     display: flex;
     flex-direction: column;
@@ -45,6 +38,18 @@ const SkillDiv = styled.div`
     display: flex;
     flex-direction: column;
     align-items: start;
+
+    @media (max-width: 426px) {
+        padding-left: 40px;
+    }
+
+    @media (max-width: 376px) {
+        padding-left: 20px;
+    }
+
+    @media (max-width: 320px) {
+        padding-left: 0;
+    }
 `
 
 const Skill = styled.h1`
@@ -55,13 +60,18 @@ const Skill = styled.h1`
 
 const DivRowSkill = styled.div`
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 10px;
     padding-right: 20px;
 
-    @media (max-width: 768x) {
+    @media (max-width: 768px) {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media (max-width: 426px) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 `
 
@@ -77,7 +87,7 @@ const DivCard = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 300px;
+    gap: 200px;
 
     @media (max-width: 768px) {
         display: flex;
@@ -93,6 +103,10 @@ const FooterDiv = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
+
+    @media (max-width: 426px) {
+        
+    }
 `
 
 const FooterCopy = styled.div`
@@ -107,6 +121,14 @@ const FooterCopy = styled.div`
 const A = styled.a`
     cursor: auto;
     text-decoration: none;
+
+    @media (max-width: 376px) {
+        width: 350px;
+    }
+
+    @media (max-width: 320px) {
+        width: 300px;
+    }
 `
 
 function HomePage() {
@@ -141,8 +163,8 @@ function HomePage() {
                         <Tag>Github</Tag>
                     </DivRowSkill>
                 </SkillDiv>
-                <a name="projects"></a>
             </AboutDiv>
+                <a name="projects"></a>
             <DivProject>
                 <Text>MEUS PROJETOS RECENTES</Text>
             </DivProject>

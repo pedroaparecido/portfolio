@@ -6,6 +6,10 @@ const DivFooter = styled.div`
     align-items: center;
     padding-left: 50vh;
     padding-right: 25px;
+
+    @media (max-width: 426px) {
+        padding-left: 0;
+    }
 `
 
 const Name = styled.h1`

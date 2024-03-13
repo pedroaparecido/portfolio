@@ -7,6 +7,10 @@ const H1 = styled.h1`
     text-decoration: none;
 
     cursor: pointer;
+
+    @media (max-width: 426px) {
+        font-size: 12px;
+    }
 `
 
 function Name({ children }) {
