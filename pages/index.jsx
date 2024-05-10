@@ -83,16 +83,18 @@ const DivProject = styled.div`
 `
 
 const DivCard = styled.div`
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-content: center;
-    gap: 200px;
+    gap: 100px;
+    padding-left: 30px;
 
     @media (max-width: 768px) {
         display: flex;
         flex-direction: column;
         gap: 0;
+        padding-left: 0;
     }
 `
 
@@ -169,6 +171,7 @@ function HomePage() {
                 <Text>MEUS PROJETOS RECENTES</Text>
             </DivProject>
             <DivCard>
+                <A href="https://barber-shop-3s4w36l4u-pedro-aparecidos-projects.vercel.app/" target="_blank"><CardProject image={'/barbershop.png'}>Barber Shop: uma barbearia online para agendamento horários</CardProject></A>
                 <A href="https://social-dev-jet.vercel.app" target="_blank"><CardProject image={'/socialdev.png'}>Social Dev: uma rede social para desenvolvedores</CardProject></A>
                 <A href="https://react-jogo-da-velha-steel-sigma.vercel.app/" target="_blank"><CardProject image={'/jogodavelha.png'}>Jogo da Velha: um jogo da velha feito em javascript</CardProject></A>
             </DivCard>
